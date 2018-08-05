@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -65,6 +65,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -184,27 +186,6 @@
 </package>
 </packages>
 </library>
-<library name="tr-switch">
-<packages>
-<package name="TL2201">
-<pad name="NC2" x="-2.5" y="2.7" drill="0.8"/>
-<pad name="C2" x="0" y="2.7" drill="0.8"/>
-<pad name="NO2" x="2.5" y="2.7" drill="0.8"/>
-<pad name="NC1" x="-2.5" y="-2.7" drill="0.8"/>
-<pad name="C1" x="0" y="-2.7" drill="0.8"/>
-<pad name="NO1" x="2.5" y="-2.7" drill="0.8"/>
-<wire x1="-4.25" y1="4.25" x2="4.25" y2="4.25" width="0.127" layer="21"/>
-<wire x1="4.25" y1="4.25" x2="4.25" y2="-4.25" width="0.127" layer="21"/>
-<wire x1="4.25" y1="-4.25" x2="-4.25" y2="-4.25" width="0.127" layer="21"/>
-<wire x1="-4.25" y1="-4.25" x2="-4.25" y2="4.25" width="0.127" layer="21"/>
-<text x="-2" y="5" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-3" y="-6" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-<wire x1="-4.318" y1="0.381" x2="-4.699" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="-4.318" y1="0.381" x2="-4.699" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="-4.699" y1="0" x2="-4.318" y2="-0.381" width="0.127" layer="21" curve="90"/>
-</package>
-</packages>
-</library>
 <library name="tr-con">
 <packages>
 <package name="MA08-OCT">
@@ -302,6 +283,40 @@
 </package>
 </packages>
 </library>
+<library name="!tactile-pth">
+<description>Generated from &lt;b&gt;rings_v30.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="SPARKFUN_TACTILE-PTH">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
+<pad name="1" x="-3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -387,10 +402,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -523,10 +542,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="3.905" y="22.381" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="6.405" y="17.849" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SW1" library="tr-switch" package="TL2201" value="TL2201" x="14.5" y="104.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.1" y="107.5" size="0.8128" layer="25" font="vector" ratio="12"/>
-<attribute name="VALUE" x="20.5" y="101.5" size="1.016" layer="27" font="vector" ratio="12" rot="R90"/>
-</element>
 <element name="SV1" library="tr-con" package="MA08-OCT" value="" x="1.76" y="85.12" smashed="yes" rot="MR270">
 <attribute name="NAME" x="2.78" y="95.491" size="0.8128" layer="26" font="vector" ratio="12" rot="MR0"/>
 <attribute name="VALUE" x="4.681" y="86.39" size="1.27" layer="28" ratio="10" rot="MR270"/>
@@ -554,23 +569,31 @@ design rules under a new name.</description>
 <element name="J-6" library="!MusicThingModular" package="WQP-PJ301M-12_JACK" value="THONKICONNNEW" x="12.9" y="40.5" rot="R270"/>
 <element name="J-1" library="!MusicThingModular" package="WQP-PJ301M-12_JACK" value="THONKICONNNEW" x="4.5" y="103.5"/>
 <element name="J-2" library="!MusicThingModular" package="WQP-PJ301M-12_JACK" value="THONKICONNNEW" x="12.9" y="93" rot="R270"/>
+<element name="S1" library="!tactile-pth" package="SPARKFUN_TACTILE-PTH" value="" x="14.5" y="104.5"/>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="SV1" pad="3"/>
-<contactref element="SW1" pad="NO1"/>
 <wire x1="1.76" y1="88.93" x2="10.93" y2="88.93" width="0.3048" layer="16"/>
 <wire x1="10.93" y1="88.93" x2="14.5" y2="92.5" width="0.3048" layer="16"/>
-<wire x1="14.5" y1="92.5" x2="14.5" y2="104.3" width="0.3048" layer="16"/>
-<wire x1="14.5" y1="104.3" x2="17.2" y2="107" width="0.3048" layer="16"/>
+<wire x1="14.5" y1="92.5" x2="14.5" y2="101" width="0.3048" layer="16"/>
+<contactref element="S1" pad="2"/>
+<contactref element="S1" pad="1"/>
+<wire x1="14.5" y1="101" x2="14.5" y2="101.3" width="0.3048" layer="16"/>
+<wire x1="14.5" y1="101" x2="14.5" y2="103.5094" width="0.3048" layer="16"/>
+<wire x1="14.5" y1="103.5094" x2="17.7512" y2="106.7606" width="0.3048" layer="16"/>
+<wire x1="11.2488" y1="106.7606" x2="17.7512" y2="106.7606" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="SW1" pad="C1"/>
 <contactref element="SV1" pad="4"/>
 <wire x1="1.76" y1="86.39" x2="10.39" y2="86.39" width="0.3048" layer="16"/>
 <wire x1="10.39" y1="86.39" x2="15.5" y2="91.5" width="0.3048" layer="16"/>
-<wire x1="15.5" y1="91.5" x2="15.5" y2="102.8" width="0.3048" layer="16"/>
-<wire x1="15.5" y1="102.8" x2="17.2" y2="104.5" width="0.3048" layer="16"/>
+<wire x1="15.5" y1="91.5" x2="15.5" y2="99.8" width="0.3048" layer="16"/>
+<contactref element="S1" pad="4"/>
+<contactref element="S1" pad="3"/>
+<wire x1="15.5" y1="99.8" x2="17.7512" y2="102.0512" width="0.3048" layer="16"/>
+<wire x1="17.7512" y1="102.0512" x2="17.7512" y2="102.2394" width="0.3048" layer="16"/>
+<wire x1="11.2488" y1="102.2394" x2="17.7512" y2="102.2394" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="SV1" pad="1"/>
@@ -823,6 +846,13 @@ design rules under a new name.</description>
 <wire x1="17.1" y1="4.1" x2="14.5" y2="1.5" width="0.3048" layer="16"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
